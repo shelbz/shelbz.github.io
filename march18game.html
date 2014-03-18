@@ -2,15 +2,63 @@
 <html>
 <head>
 	<style>
-	h1 {font-size: 30px; color: purple; }
-	button {color: #00FFFF;}
+	h1 {font-size: 30px; color: purple; font-family: helvetica; background-color: hotpink}
+	h2 {font-size:20px; color: purple; font-family: helvetica;}
+	button {color: purple; font-size: 15px; font-family: helvetica; background-color: #66CCCC;}
+	.1{}
+	.2{}
 	</style>
 </head>
 <body>
 	<h1>Okay.</h1>
-	<button>Hello!</button>
-	
-	<script>
-	</script>
+	<h2>The difference between talking to a computer and talking to a person.</h2>
+	<button class="1">Hello!</button>
+
+		<script>
+		var button = document.querySelector(".1");
+		button.addEventListener("click", function (ev){
+			alert("Hi :)");
+		}, false);
+		</script>
+	<br>
+
+	<button class="2">How are you?</button>
+
+		<script>
+		var button = document.querySelector("button");
+		button.addEventListener("click", function (ev){
+			alert("I'm pretty good. How are you?");
+		}, false);
+		</script>
+	</br>
+	<br>
+
+	<button class="3">I'm okay :/</button>
+
+		<script>
+		var button = document.querySelector("button");
+		button.addEventListener("click", function (ev){
+			alert("Oh -- What's up?");
+		}, false);
+		</script>
+
+	<button class="4">I'm great!</button>
+
+		<script>
+		var button = document.querySelector("button");
+		button.addEventListener("click", function (ev){
+			alert(":) What's up?");
+		}, false);
+		</script>
+
+	<button class="4">I'm not sure.</button>
+
+		<script>
+		var button = document.querySelector("button");
+		button.addEventListener("click", function (ev){
+			alert("What are you thinking about?");
+		}, false);
+		</script>
+	</br>
 </body>
 </html>
