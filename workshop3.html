@@ -1,54 +1,56 @@
 <!doctype html>
 <html>
 <head>
-		<style>
-			.box {
-				height: 200px;
-				background-color: #FF00FF;
-				width: 200px;
 
-			$(function(){
-				$(".box")
+	<style>
+		.box {
+			float: left;
+			height: 200px;
+			background-color: purple;
+			width: 200px;
+			margin: 10px;
+		}
+		.hovered {
+			float: left;
+			height: 300px;
+			background-color: green;
+			width: 300px;
+			margin: 10px;
+		}
+	</style>
 
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(function(){
+			$(".box").click(function() {
+				alert("you clicked a box");
+				// $(this).fadeOut(100).fadeIn(100)
+			});
+			$(".box").hover(function() {
+				//hover on 
+				$(this).addClass("hovered");
+			}, function() {
+				//hover off
+				$(this).removeClass("hovered")
+			})
 			});
 
-
-			}
-
-
-		</style>
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>"
-		<script>
-
-			var name = "Shelby";
-			var age = 22;
-
-			name = "Shelby Mack";
-
-			var sayMyName = function() {
-				alert(name);
-			};
-
-		
-			sayMyName();
-
-		</script>
+	</script>
 </head>
+
 <body>
-
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+</body>
 
 </html>
