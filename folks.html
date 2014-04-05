@@ -2,37 +2,43 @@
 <html>
 <head>
 	<style>
-	p {font-family: arial;}
+	p.intro {font-family: arial; font-size: 18px; font-style: italic; font-weight: bold;}
+	p.questions {font-family: arial; font-size: 16px;}
 	div.content {width:500px;}
+	body.margin {margin: 20px 50px 50px 50px;}
+	h4 {font-family: arial; color: #FF0066; font-variant: small-caps; font-size: 18px}
+	p.folks {font-family: arial; font-size: 40px; font-weight: bold;}
 	</style>
 	<title>FOLKS</title>
 </head>
-<body>
+<body class="margin" bgcolor="#CCCCFF">
 	<div class="content">
-<p>Are you directly affected by this issue?  Are there already people directly affected by the issue who are working on it?  Get in touch!</p>
-<p><a href="http://shelbz.github.io/communities.html">Who*</a> is affected by this <a href="http://shelbz.github.io/change.html">issue*</a> or oppressed by this institution? Who is your base?</p>
-<input id="text" type="textField">
+	<h4><span style="background-color: #FFFF00">organizing idea-share</span></h4>
+	<p class="folks">FOLKS</p>
+	<p class="intro">Are you directly affected by this issue?  Are there already people directly affected by the issue who are working on it?  Get in touch!</p>
+	<p class="questions"><a href="http://shelbz.github.io/communities.html">Who*</a> is affected by this <a href="http://shelbz.github.io/change.html">issue*</a> or oppressed by this institution? <br> Who is your base?</p>
+	<input id="text" type="textField">
 	<form> 
 	<input type=button 
 	value="Next question"
 	onClick="self.location='http://shelbz.github.io/folks.html'">
 	</form> 
 	<!In the end, I want clicking this button to display the next question>
-	<p>In specific numbers, list the resources your organization brings to the campaign.</p>
+	<p class="questions">In specific numbers, list the resources your organization brings to the campaign.</p>
 	<input id="text" type="textField">
 	<form> 
 	<input type=button 
 	value="Next question"
 	onClick="self.location='http://shelbz.github.io/folks.html'">
 	</form> 
-	<p>In the same terms, list the ways in which you want this campaign to strengthen your group.</p>
+	<p class="questions">In the same terms, list the ways in which you want this campaign to strengthen your group.</p>
 	<input id="text" type="textField">
 	<form> 
 	<input type=button 
 	value="Next question"
 	onClick="self.location='http://shelbz.github.io/folks.html'">
 	</form> 
-	<p>List any internal organizational problems.</p>
+	<p class="questions">List any internal organizational problems.</p>
 	<input id="text" type="textField">
 	<form> 
 	<input type=button 
