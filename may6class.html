@@ -21,7 +21,7 @@
 				success: function(weather) {
 					console.log(weather);
 
-					alert("It's currently" + weather.temp); 
+				
 					$("#temp").html(weather.temp);
 					$("#city").css(weather.city);
 
@@ -36,6 +36,7 @@
 
 </head>
 <body>
+
 	<h1 id="temp"></h1>
 	<h2 id="city"></h2>
 </body>
