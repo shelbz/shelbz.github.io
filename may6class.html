@@ -10,7 +10,7 @@
 
 	<style>
 	</style>
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="jquery.simpleWeather.min.js"></script>
 	<script>
 
@@ -20,7 +20,6 @@
 				unit: 'f',
 				success: function(weather) {
 					console.log(weather);
-
 				
 					jquery("#temp").html(weather.temp);
 					jquery("#city").css(weather.city);
@@ -33,7 +32,6 @@
 			})
 		});
 	</script>
-
 </head>
 <body>
 
