@@ -10,19 +10,19 @@
 
 	<style>
 	</style>
-	<script scr="//code.jquery.com/jquery-1.11.1.min.js" ></script>
+	<script scr="http://code.jquery.com/jquery-1.11.1.min.js" ></script>
 	<script scr="jquery.simpleWeather.min.js"></script>
 	<script>
 
-		jquery(function(){
-			jquery.simpleweather({
+		jQuery(function(){
+			jQuery.simpleweather({
 				location:'02906',
 				unit: 'f',
 				success: function(weather) {
 					console.log(weather);
 				
-					jquery("#temp").html(weather.temp);
-					jquery("#city").css(weather.city);
+					jQuery("#temp").html(weather.temp);
+					jQuery("#city").css(weather.city);
 
 				},
 				error: function(error) {
